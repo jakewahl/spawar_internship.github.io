@@ -1,6 +1,6 @@
-jake2,011497,430
+jake2,011497,580
 yodawg98,hello,2
-aaron,jake,343
-jakewahl,lucky13,844
+aaron,jake,393
+jakewahl,lucky13,924
 testAcct,testPw,9000
 eric,eric,100
