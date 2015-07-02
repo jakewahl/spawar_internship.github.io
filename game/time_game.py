@@ -48,9 +48,16 @@ question = int(raw_input("How many questions would you like?: "))
 # while they haven't lost against the timer
 while question > 0:
     numb_lst = numpy.random.uniform(0, 13, 2)
-    ans = raw_input("{0} * {1}".format(int(numb_lst[0]), int(numb_lst[1])))
+    ans = raw_input("{0} * {1}: ".format(int(numb_lst[0]), int(numb_lst[1])))
+    while True:
+        try:
+            x = int(ans)
+            break
+        except ValueError:
+            print "Oops! Not an acceptable integer!"
+            ans = raw_input("{0} * {1}: ".format(int(numb_lst[0]), int(numb_lst[1])))
     while int(ans) != int(numb_lst[0]) * int(numb_lst[1]):
-        current_score -= 20
+        current_score -= 50
         ans = raw_input("{0} * {1}".format(int(numb_lst[0]), int(numb_lst[1])))
     else:
         current_score += 10
@@ -67,4 +74,3 @@ with open("userInfo.txt", "w") as infoFile:
             acct_string = acct_string + ",{}".format(str(thing))
         acct_string = acct_string + "\n"
     infoFile.write(acct_string)
-
