@@ -49,7 +49,6 @@ while current_player is None:
             print "Starting points: " + str(acct_dict[username][1])
             current_player = username
 current_score = acct_dict[username][1]
-# play game
 
 question = int(raw_input("How many questions would you like?: "))
 
@@ -58,14 +57,16 @@ while question > 0:
     numb_lst = numpy.random.uniform(0, 13, 2)
     # Cast the floats as integers multiplied by each other in a string
     ans = raw_input("{0} * {1}: ".format(int(numb_lst[0]), int(numb_lst[1])))
-    # If user types in a non-integer, program won't crash, question will be asked again
+
     while True:
+        # If user types in a non-integer, program won't crash, question will be asked again
         try:
             x = int(ans)
             break
         except ValueError:
             print "Oops! Not an acceptable integer!"
             ans = raw_input("{0} * {1}: ".format(int(numb_lst[0]), int(numb_lst[1])))
+
     # Check if the user answer is correct
     while int(ans) != int(numb_lst[0]) * int(numb_lst[1]):
         current_score -= 50
@@ -77,7 +78,7 @@ while question > 0:
 print "You now have {} points".format(current_score)
 # Update acct_dict with current user score
 acct_dict[username][1] = current_score
-# For every line in the acct_dict, cast as string and write to a file
+# For every line in the acct_dict, format as string and write to a file
 with open("userInfo.txt", "w") as infoFile:
     acct_string = ""
     for k,v in acct_dict.iteritems():
