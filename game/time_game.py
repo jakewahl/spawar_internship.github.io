@@ -2,6 +2,7 @@ __author__ = 'jakewahl'
 
 import csv
 import numpy
+import time
 
 # globals to be used in game:
 acct_dict = {}
@@ -51,29 +52,51 @@ while current_player is None:
 current_score = acct_dict[username][1]
 
 question = int(raw_input("How many questions would you like?: "))
+while True:
+    try:
+        n = question
+        break
+    except ValueError:
+        print "Please type a number!"
+        question = int(raw_input("How many questions would you like?: "))
+
 
 while question > 0:
     # Create two floats from 0 to 12
     numb_lst = numpy.random.uniform(0, 13, 2)
+    timer = time.time()
     # Cast the floats as integers multiplied by each other in a string
     ans = raw_input("{0} * {1}: ".format(int(numb_lst[0]), int(numb_lst[1])))
-
-    while True:
+    t = time.time() - timer
+    while t < 3.0:
         # If user types in a non-integer, program won't crash, question will be asked again
         try:
             x = int(ans)
             break
         except ValueError:
-            print "Oops! Not an acceptable integer!"
+            print "Oops! Not a number!"
+            timer = time.time()
             ans = raw_input("{0} * {1}: ".format(int(numb_lst[0]), int(numb_lst[1])))
+            t = time.time() - timer
+    if t < 3.0:
+        # Check if the user answer is correct
+        while int(ans) != int(numb_lst[0]) * int(numb_lst[1]) and t < 3.0:
+            print "Incorrect"
+            current_score -= 50
+            timer = time.time()
+            ans = raw_input("{0} * {1}: ".format(int(numb_lst[0]), int(numb_lst[1])))
+            t = time.time() - timer
 
-    # Check if the user answer is correct
-    while int(ans) != int(numb_lst[0]) * int(numb_lst[1]):
-        current_score -= 50
-        ans = raw_input("{0} * {1}".format(int(numb_lst[0]), int(numb_lst[1])))
+        else:
+            if t > 3.0:
+                print "Game Over"
+                break
+            current_score += 10
+            question -= 1
     else:
-        current_score += 10
-        question -= 1
+        print "Game Over"
+        break
+
 
 print "You now have {} points".format(current_score)
 # Update acct_dict with current user score
@@ -81,7 +104,7 @@ acct_dict[username][1] = current_score
 # For every line in the acct_dict, format as string and write to a file
 with open("userInfo.txt", "w") as infoFile:
     acct_string = ""
-    for k,v in acct_dict.iteritems():
+    for k, v in acct_dict.iteritems():
         acct_string = acct_string + "{}".format(k)
         for thing in v:
             acct_string = acct_string + ",{}".format(str(thing))
