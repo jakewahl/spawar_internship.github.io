@@ -1,6 +1,10 @@
 jake2,011497,580
-yodawg98,hello,2
-aaron,jake,393
-jakewahl,lucky13,924
+rando,EpicFail987Ret135,-3540
+max2,cats,170
+max,cats,-940
+yodawg98,hello,72
+aaron,jake,573
+jakewahl,lucky13,764
+scott,hello,40
 testAcct,testPw,9000
 eric,eric,100
