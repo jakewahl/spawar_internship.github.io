@@ -3,11 +3,30 @@ __author__ = 'jakewahl'
 import csv
 import numpy
 import time
+import random
 
 # globals to be used in game:
+def multiply(num1, num2):
+    return int(num1) * int(num2)
+
+def subtract(num1, num2):
+    return int(num1) - int(num2)
+
+def add(num1, num2):
+    return int(num1) + int(num2)
+
+def get_op(op):
+    if "*" == op:
+        return multiply
+    elif "-" == op:
+        return subtract
+    elif "+" == op:
+        return add
 acct_dict = {}
 current_player = None
 current_score = 0
+ops = ['+','-','*']
+
 
 # Load the acct_dict from file
 try:
@@ -51,22 +70,23 @@ while current_player is None:
             current_player = username
 current_score = acct_dict[username][1]
 
-question = int(raw_input("How many questions would you like?: "))
+
 while True:
     try:
+        question = int(raw_input("How many questions would you like?: "))
         n = question
         break
     except ValueError:
         print "Please type a number!"
-        question = int(raw_input("How many questions would you like?: "))
 
 
 while question > 0:
     # Create two floats from 0 to 12
     numb_lst = numpy.random.uniform(0, 13, 2)
+    op = (random.choice(ops))
     timer = time.time()
     # Cast the floats as integers multiplied by each other in a string
-    ans = raw_input("{0} * {1}: ".format(int(numb_lst[0]), int(numb_lst[1])))
+    ans = raw_input("{0} {1} {2}: ".format(int(numb_lst[0]), op, int(numb_lst[1])))
     t = time.time() - timer
     while t < 3.0:
         # If user types in a non-integer, program won't crash, question will be asked again
@@ -76,25 +96,26 @@ while question > 0:
         except ValueError:
             print "Oops! Not a number!"
             timer = time.time()
-            ans = raw_input("{0} * {1}: ".format(int(numb_lst[0]), int(numb_lst[1])))
+            ans = raw_input("{0} {1} {2}: ".format(int(numb_lst[0]), op, int(numb_lst[1])))
             t = time.time() - timer
     if t < 3.0:
+        operator = get_op(op)
         # Check if the user answer is correct
-        while int(ans) != int(numb_lst[0]) * int(numb_lst[1]) and t < 3.0:
+        while int(ans) != operator(numb_lst[0], numb_lst[1]) and t < 3.0:
             print "Incorrect"
             current_score -= 50
             timer = time.time()
-            ans = raw_input("{0} * {1}: ".format(int(numb_lst[0]), int(numb_lst[1])))
+            ans = raw_input("{0} {1} {2}: ".format(int(numb_lst[0]), op, int(numb_lst[1])))
             t = time.time() - timer
 
         else:
             if t > 3.0:
-                print "Game Over"
+                print "Game Over, time expired and your answer was incorrect"
                 break
             current_score += 10
             question -= 1
     else:
-        print "Game Over"
+        print "Game Over, time expired"
         break
 
 
