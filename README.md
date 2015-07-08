@@ -30,3 +30,4 @@ Added an exception handler for the "how many questions?" part of my game.  A ton
 
 DAY 10 (7/8):
 Signal processing (in my notebook).  Trying to understand Aaron's code for creating a database and adding our ship information into tables inside of the database.  Writing own code for this step.  Continuing to think of ideas to improve my math game.
+Hello Jake
