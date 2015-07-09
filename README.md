@@ -5,7 +5,7 @@
 - I learned the basics of Linux and started to learn Python.  Iterative and recursive lines.  
 - Completed a number of easy Python challenges from Scott.  Here they are: [LearningPython](http://127.0.0.1:8888/d7fe7f34-bcd3-4ad9-8e88-d2decf3a2968)
 - Awesome Python Computer Language tutorial: [The Python Tutorial](https://docs.python.org/2/tutorial/)
-- #####Helpful Linux Commands
+- ####Helpful Linux Commands
 ```
 ~ $ cd internship/game/
 ```
