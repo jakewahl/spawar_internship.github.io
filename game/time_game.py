@@ -4,6 +4,7 @@ import csv
 import numpy
 import time
 import random
+import base64
 
 # globals to be used in game:
 def multiply(num1, num2):
@@ -50,9 +51,11 @@ while current_player is None:
     # If player exists have them try to login
     if playerExists:
         password = raw_input("Password: ")
-        while password != acct_dict[username][0] and password != "exit":
+        ecpassword = base64.b64encode(password)
+        while ecpassword != acct_dict[username][0] and password != "exit":
             print "Incorrect, type exit to leave or try again"
             password = raw_input("Password: ")
+            ecpassword = base64.b64encode(password)
         else:
             if password != "exit":
                 current_score = acct_dict[username][1]
@@ -62,10 +65,12 @@ while current_player is None:
     else:
         if "yes" == raw_input("Are you trying to create a new account (yes or no)?"):
             password = raw_input("Password: ")
+            ecpassword = base64.b64encode(password)
             # 'Exit' is unacceptable because it used to restart login
             while password == "exit":
                 password = raw_input("choose new password, exit not acceptable: ")
-            acct_dict[username] = [password, 0]
+                ecpassword = base64.b64encode(password)
+            acct_dict[username] = [ecpassword, 0]
             print "Starting points: " + str(acct_dict[username][1])
             current_player = username
 current_score = acct_dict[username][1]
@@ -74,7 +79,6 @@ current_score = acct_dict[username][1]
 while True:
     try:
         question = int(raw_input("How many questions would you like?: "))
-        n = question
         break
     except ValueError:
         print "Please type a number!"
@@ -119,7 +123,7 @@ while question > 0:
             if t > 3.0:
                 print "Game Over, time expired"
                 break
-            current_score += 12
+            current_score += 10
             question -= 1
     else:
         print "Game Over, time expired"
