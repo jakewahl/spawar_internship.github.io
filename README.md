@@ -4,9 +4,27 @@
 *DAY 1 (6/23)*:  
 - I learned the basics of Linux and started to learn Python.  Iterative and recursive lines.  
 - Completed a number of easy Python challenges from Scott.  Here they are: [LearningPython](http://127.0.0.1:8888/d7fe7f34-bcd3-4ad9-8e88-d2decf3a2968)
+- Awesome Python Computer Language tutorial: [The Python Tutorial](https://docs.python.org/2/tutorial/)
+- #####Helpful Linux Commands
+```
+~ $ cd internship/game/
+```
+**go to another folder (change directory)**
+```
+~ $ ipython notebook
+```
+**open up ipython notebook dashboard**
+```
+$ ipython notebook file.ipynb
+```
+**open up a specific .ipynb**
+```
+$ /opt/pycharm-community-4.5.1/bin/pycharm.sh
+```
+**open up pycharm**
 
 *DAY 2 (6/24)*:  
-- Started the day by searching for an online class about Python.  Found codeacademy.com, started the 13 hr Python class.  
+- Started the day by searching for an online class about Python.  Found codecademy.com, started the 13 hr Python class.  
 - Ran through iterations and recursions again on whiteboard.  Factorial both iterative and recursive.  
 - Intro to random walks, then installed numpy to generate random lists and arrays.
 
