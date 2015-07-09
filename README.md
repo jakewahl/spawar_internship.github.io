@@ -1,4 +1,5 @@
 #Jake Wahl's 2015 Summer SPAWAR Internship
+***
 ###Week 1
 *DAY 1 (6/23)*:  
 - I learned the basics of Linux and started to learn Python.  Iterative and recursive lines.  
@@ -11,7 +12,7 @@
 
 *DAY 3 (6/25)*: 
 - Learned how to trace through code to find errors. Project Euler questions 1 - 3.  (euler.ipynb)
-
+***
 ###Week 2
 *DAY 4 (6/29)*: 
 - Project Eueler 4 - 5.  ipython notebook has new folders.    
@@ -52,6 +53,7 @@ except ValueError:
 - Also plotted csv data on to a map using leaflet.  It looks something like this:
 
 ![pic](/mapping/index_cluster_pic.png)
+***
 ###Week 3
 *DAY 8 (7/6)*:
 - Started the day off with linear algebra.  Learned about vectors and matrices and dot products.  Two ipython notebook programs for dot products and unit vectors.  
@@ -91,4 +93,4 @@ def get_op(op):
 *DAY 11 (7/9)*:
 - Worked out an error in my math game.  If you got an answer wrong, then typed a non-int it would crash.  Added another exception handler in that part of my code.  
 - I wanted the passwords in the userInfo.txt file to be ecrypted so I used base64.b64encode() to hide the passwords from other users, and it was successful.  I am happy with the way the game is right now! If you want to see it: [Jake's Game](https://github.com/jakewahl/spawar_internship.github.io/blob/master/game/time_game.py)
-
+***
