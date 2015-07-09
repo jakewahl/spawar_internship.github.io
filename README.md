@@ -1,3 +1,4 @@
+
 ###Week 1
 *DAY 1 (6/23)*:  
 I learned the basics of Linux and started to learn Python.  Iterative and recursive lines.  
@@ -30,7 +31,7 @@ Look at the rest of my problems!:
 [ProjectEuler1-6](http://127.0.0.1:8888/65ad8a2f-ffc8-4757-8249-9fa0b7e272d3)
 
 *DAY 5 (6/30)*:
-Took a tour of 4 labs at the Photonic labs.  MATLAB class.  Started a simple math game.  Create/save accounts with usernames, passwords, and scores.  Gives two random numbers to be multiplied and the player must answer them within a time limit.
+Took a tour of 4 labs at the Photonic labs.  MATLAB class.  Started a simple math game.  Create/save accounts with usernames, passwords, and scores.  Gives two random numbers to be multiplied and the player must answer them within a time limit.  Started with the mapping project.
 
 *DAY 6 (7/1)*:
 Finished multiplication game.  Program crashes when string is typed, so I will add an exception handler.
@@ -44,7 +45,7 @@ try:
 except ValueError:
     print "Please type a number!"
 ```
-
+Also plotted csv data on to a map using leaflet.  It looks something like this: ![pic](/mapping/index_cluster_pic.png)
 ###Week 3
 *DAY 8 (7/6)*:
 Started the day off with linear algebra.  Learned about vectors and matrices and dot products.  Two ipython notebook programs for dot products and unit vectors.  Continued my game and made a few modifications.  Added a timer per question and some print statements to say if the question was wrong or not.  Currently trying to add an exception to handle a string input after the "how many questions" question is asked.
@@ -57,3 +58,4 @@ Signal processing (in my notebook).  Trying to understand Aaron's code for creat
 
 *DAY 11 (7/9)*:
 Worked out an error in my math game.  If you got an answer wrong, then typed a non-int it would crash.  Added another exception handler in that part of my code.  I wanted the passwords in the userInfo.txt file to be ecrypted so I used base64.b64encode() to hide the passwords from other users.  Successful.  I am happy with the way the game is right now! If you want to see it: [Jake's Game](https://github.com/jakewahl/spawar_internship.github.io/blob/master/game/time_game.py)
+
