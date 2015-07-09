@@ -5,7 +5,7 @@
 - I learned the basics of Linux and started to learn Python.  Iterative and recursive lines.  
 - Completed a number of easy Python challenges from Scott.  Here they are: [LearningPython](http://127.0.0.1:8888/d7fe7f34-bcd3-4ad9-8e88-d2decf3a2968)
 - Awesome Python Computer Language tutorial: [The Python Tutorial](https://docs.python.org/2/tutorial/)
-- Helpful Linux Commands
+- Helpful Linux Commands:
 ```
 ~ $ cd internship/game/
 ```
@@ -15,11 +15,11 @@
 ```
 **open up ipython notebook dashboard**
 ```
-$ ipython notebook file.ipynb
+~ $ ipython notebook file.ipynb
 ```
 **open up a specific .ipynb**
 ```
-$ /opt/pycharm-community-4.5.1/bin/pycharm.sh
+~ $ /opt/pycharm-community-4.5.1/bin/pycharm.sh
 ```
 **open up pycharm**
 
@@ -30,7 +30,9 @@ $ /opt/pycharm-community-4.5.1/bin/pycharm.sh
 
 *DAY 3 (6/25)*: 
 - Learned how to trace through code to find errors. Project Euler questions 1 - 3.  (euler.ipynb)
+
 ***
+
 ###Week 2
 *DAY 4 (6/29)*: 
 - Project Eueler 4 - 5.  ipython notebook has new folders.    
@@ -102,7 +104,6 @@ def get_op(op):
     elif "+" == op:
         return add
 ```
-
 *DAY 10 (7/8)*:
 - Signal processing (in my notebook).  
 - Trying to understand Aaron's code for creating a database and adding our ship information into tables inside of the database.  Writing own code for this step.  
@@ -111,4 +112,4 @@ def get_op(op):
 *DAY 11 (7/9)*:
 - Worked out an error in my math game.  If you got an answer wrong, then typed a non-int it would crash.  Added another exception handler in that part of my code.  
 - I wanted the passwords in the userInfo.txt file to be ecrypted so I used base64.b64encode() to hide the passwords from other users, and it was successful.  I am happy with the way the game is right now! If you want to see it: [Jake's Game](https://github.com/jakewahl/spawar_internship.github.io/blob/master/game/time_game.py)
-***
+
