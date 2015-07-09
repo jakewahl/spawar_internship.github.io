@@ -11,6 +11,20 @@ Learned how to trace through code to find errors. Project Euler questions 1 - 3.
 ###Week 2
 *DAY 4 (6/29)*: 
 Project Eueler 4 - 5.  ipython notebook has new folders.
+Sample code for Project Euler 4:
+```
+i, b = 999, 999
+pals = []
+while b > 800:
+    i = 999
+    while i >= b:   
+        pal = str(i * b)    
+        if pal == pal[::-1]:
+            pals.append(i * b)
+        i = i - 1
+    b = b - 1
+print max(pals)
+```
 
 *DAY 5 (6/30)*:
 Took a tour of 4 labs at the Photonic labs.  MATLAB class.  Started a game.  Create/save accounts with usernames, passwords, and scores.
@@ -20,13 +34,13 @@ Finished multiplication game.  Program crashes when string is typed, so I will a
 
 *DAY 7 (7/2)*:
 Added an exception handler to my game.  Now when any other type is inputed, they can repeat the question with no penalty.
-'''sh
+```
 try:
     question = int(raw_input("How many questions would you like?: "))
     break
 except ValueError:
     print "Please type a number!"
-'''
+```
 
 ###Week 3
 *DAY 8 (7/6)*:
