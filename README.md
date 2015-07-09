@@ -1,6 +1,7 @@
 ###Week 1
 *DAY 1 (6/23)*:  
 I learned the basics of Linux and started to learn Python.  Iterative and recursive lines.  
+Completed a number of easy Python challenges from Scott.  Here they are: [LearningPython](http://127.0.0.1:8888/d7fe7f34-bcd3-4ad9-8e88-d2decf3a2968)
 
 *DAY 2 (6/24)*:  
 Started the day by searching for an online class about Python.  Found codeacademy.com, started the 13 hr Python class.  Ran through iterations and recursions again on whiteboard.  Factorial both iterative and recursive.  Intro to random walks, then installed numpy to generate random lists and arrays.
@@ -10,7 +11,7 @@ Learned how to trace through code to find errors. Project Euler questions 1 - 3.
 
 ###Week 2
 *DAY 4 (6/29)*: 
-Project Eueler 4 - 5.  ipython notebook has new folders.
+Project Eueler 4 - 5.  ipython notebook has new folders.    
 Sample code for Project Euler 4:
 ```
 i, b = 999, 999
@@ -25,9 +26,11 @@ while b > 800:
     b = b - 1
 print max(pals)
 ```
+Look at the rest of my problems!:
+[ProjectEuler1-6](http://127.0.0.1:8888/65ad8a2f-ffc8-4757-8249-9fa0b7e272d3)
 
 *DAY 5 (6/30)*:
-Took a tour of 4 labs at the Photonic labs.  MATLAB class.  Started a game.  Create/save accounts with usernames, passwords, and scores.
+Took a tour of 4 labs at the Photonic labs.  MATLAB class.  Started a simple math game.  Create/save accounts with usernames, passwords, and scores.  Gives two random numbers to be multiplied and the player must answer them within a time limit.
 
 *DAY 6 (7/1)*:
 Finished multiplication game.  Program crashes when string is typed, so I will add an exception handler.
@@ -53,4 +56,4 @@ Added an exception handler for the "how many questions?" part of my game.  A ton
 Signal processing (in my notebook).  Trying to understand Aaron's code for creating a database and adding our ship information into tables inside of the database.  Writing own code for this step.  Continuing to think of ideas to improve my math game.
 
 *DAY 11 (7/9)*:
-Worked out an error in my math game.  If you got an answer wrong, then typed a non-int it would crash.  Added another exception handler in that part of my code.  I wanted the passwords in the userInfo.txt file to be ecrypted so I used base64.b64encode() to hide the passwords from other users.  Successful.
+Worked out an error in my math game.  If you got an answer wrong, then typed a non-int it would crash.  Added another exception handler in that part of my code.  I wanted the passwords in the userInfo.txt file to be ecrypted so I used base64.b64encode() to hide the passwords from other users.  Successful.  I am happy with the way the game is right now! If you want to see it: [Jake's Game](https://github.com/jakewahl/spawar_internship.github.io/blob/master/game/time_game.py)
