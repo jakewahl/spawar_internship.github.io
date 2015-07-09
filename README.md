@@ -50,7 +50,25 @@ Also plotted csv data on to a map using leaflet.  It looks something like this: 
 Started the day off with linear algebra.  Learned about vectors and matrices and dot products.  Two ipython notebook programs for dot products and unit vectors.  Continued my game and made a few modifications.  Added a timer per question and some print statements to say if the question was wrong or not.  Currently trying to add an exception to handle a string input after the "how many questions" question is asked.
 
 *DAY 9 (7/7)*:  
-Added an exception handler for the "how many questions?" part of my game.  A ton of linear algebra was taught and somewhat absorbed, ~ 3.5 hours worth.  MATLAB class in the morning, coded for 1089 game.  Learning commands and uses of MySQL (Structured Query Language).  SQL lets you access and manipulate databases and information within databases.  Will start adding the info from the mapping project to a database tomorrow. Successfully changed the game to where it also has a random operator as well as random numbers.  
+Added an exception handler for the "how many questions?" part of my game.  A ton of linear algebra was taught and somewhat absorbed, ~ 3.5 hours worth.  MATLAB class in the morning, coded for 1089 game.  Learning commands and uses of MySQL (Structured Query Language).  SQL lets you access and manipulate databases and information within databases.  Will start adding the info from the mapping project to a database tomorrow. Successfully changed the game to where it also has a random operator as well as random numbers.  Using these functions:
+```
+def multiply(num1, num2):
+    return int(num1) * int(num2)
+
+def subtract(num1, num2):
+    return int(num1) - int(num2)
+
+def add(num1, num2):
+    return int(num1) + int(num2)
+
+def get_op(op):
+    if "*" == op:
+        return multiply
+    elif "-" == op:
+        return subtract
+    elif "+" == op:
+        return add
+```
 
 *DAY 10 (7/8)*:
 Signal processing (in my notebook).  Trying to understand Aaron's code for creating a database and adding our ship information into tables inside of the database.  Writing own code for this step.  Continuing to think of ideas to improve my math game.
