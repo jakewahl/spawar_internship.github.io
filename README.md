@@ -112,4 +112,5 @@ def get_op(op):
 *DAY 11 (7/9)*:
 - Worked out an error in my math game.  If you got an answer wrong, then typed a non-int it would crash.  Added another exception handler in that part of my code.  
 - I wanted the passwords in the userInfo.txt file to be ecrypted so I used base64.b64encode() to hide the passwords from other users, and it was successful.  I am happy with the way the game is right now! If you want to see it: [Jake's Game](https://github.com/jakewahl/spawar_internship.github.io/blob/master/game/time_game.py)
+- Spent multiple hours updating my README.md with Dillinger Markdown.
 
