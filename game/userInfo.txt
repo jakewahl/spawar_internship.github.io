@@ -1,10 +1,3 @@
-jake2,011497,580
-rando,EpicFail987Ret135,-3540
-max2,cats,170
-max,cats,-940
-yodawg98,hello,72
-aaron,jake,573
-jakewahl,lucky13,764
-scott,hello,40
-testAcct,testPw,9000
-eric,eric,100
+Jared,SGV0dGljaw==,40
+jake,c2xv,520
+max,aGVsbG8=,10
