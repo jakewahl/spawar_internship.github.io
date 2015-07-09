@@ -103,16 +103,23 @@ while question > 0:
         # Check if the user answer is correct
         while int(ans) != operator(numb_lst[0], numb_lst[1]) and t < 3.0:
             print "Incorrect"
-            current_score -= 50
+            current_score -= 30
             timer = time.time()
             ans = raw_input("{0} {1} {2}: ".format(int(numb_lst[0]), op, int(numb_lst[1])))
             t = time.time() - timer
+            try:
+                x = int(ans)
+            except ValueError:
+                print "Oops! Not a number!"
+                timer = time.time()
+                ans = raw_input("{0} {1} {2}: ".format(int(numb_lst[0]), op, int(numb_lst[1])))
+                t = time.time() - timer
 
         else:
             if t > 3.0:
-                print "Game Over, time expired and your answer was incorrect"
+                print "Game Over, time expired"
                 break
-            current_score += 10
+            current_score += 12
             question -= 1
     else:
         print "Game Over, time expired"
