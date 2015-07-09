@@ -41,7 +41,6 @@ Added an exception handler to my game.  Now when any other type is inputed, they
 ```
 try:
     question = int(raw_input("How many questions would you like?: "))
-    break
 except ValueError:
     print "Please type a number!"
 ```
