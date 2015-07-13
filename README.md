@@ -29,7 +29,7 @@
 - Intro to random walks, then installed numpy to generate random lists and arrays.
 
 *DAY 3 (6/25)*: 
-- Learned how to trace through code to find errors. Project Euler questions 1 - 3.  (euler.ipynb)
+- Learned how to trace through code to find errors. Project Euler questions 1 - 3.  [Project Euler problems](https://github.com/jakewahl/spawar_internship.github.io/blob/master/euler.ipynb)
 
 ***
 
