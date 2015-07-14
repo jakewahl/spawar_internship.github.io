@@ -114,8 +114,13 @@ def get_op(op):
 - I wanted the passwords in the userInfo.txt file to be ecrypted so I used base64.b64encode() to hide the passwords from other users, and it was successful.  I am happy with the way the game is right now! If you want to see it: [Jake's Game](https://github.com/jakewahl/spawar_internship.github.io/blob/master/game/time_game.py)
 - Spent multiple hours updating my README.md with Dillinger Markdown.
 
+***
+###Week 4
 *DAY 12 (7/13)*:
 - Scott gave us an in-depth talk about his brief.  The discovery of anomolies (locating ships and humans) in Full-Motion Video.
 - I started to work on Project Euler again.  I completed problems 6 through 8 today and I am currently working on 9.  
 - Went to an intern meeting at 1:00 at the LOF.  Met a UCI Ph.D student studying Software Engineering who did her undergrad in Computer Science at Northwestern.  She works with Virtual Reality.
+
+*DAY 13 (7/14)*:
+- 
 
