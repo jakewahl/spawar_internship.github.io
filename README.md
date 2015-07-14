@@ -123,4 +123,4 @@ def get_op(op):
 
 *DAY 13 (7/14)*:
 - Worked on more Project Euler.  Finished problem 9 and and 10.  
-- Started to code for least squares, finished it.  Will upload/comment it/add pic to github tomorrow.
+- Started to code for least squares, finished it.  Will upload/comment it/add pic to github tomorrow. Meeting with Irwin Jacobs 1:00.
