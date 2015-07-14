@@ -122,5 +122,4 @@ def get_op(op):
 - Went to an intern meeting at 1:00 at the LOF.  Met a UCI Ph.D student studying Software Engineering who did her undergrad in Computer Science at Northwestern.  She works with Virtual Reality.
 
 *DAY 13 (7/14)*:
-- 
-
+- Started
