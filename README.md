@@ -133,5 +133,7 @@ def get_op(op):
 
 - Went to a Computer Networks Seminar
 - Irwin Jacobs gave a speech on his life, entrepeneurship, and innovation in technology.  
-- Throughout the day I have been reading sections of this book: [Introduction to Linear ALgebra by Gilbert Strang, a professor at MIT](http://www.amazon.com/Introduction-Linear-Algebra-Fourth-Edition/dp/0980232716)
+- Throughout the day I have been reading sections of this book: [Introduction to Linear Algebra by Gilbert Strang, a professor at MIT](http://www.amazon.com/Introduction-Linear-Algebra-Fourth-Edition/dp/0980232716)
+
+*DAY 15 (7/16)*:
 
