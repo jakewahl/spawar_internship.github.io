@@ -126,5 +126,6 @@ def get_op(op):
 - Started to code for least squares, finished it.  Will upload/comment it/add pic to github tomorrow. 
 
 *DAY 14 (7/15)*:
+
 ![leastsquaresplot](/leastsquares/linalg/leastsquaresplot.png)
 
