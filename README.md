@@ -127,5 +127,5 @@ def get_op(op):
 
 *DAY 14 (7/15)*:
 
-![leastsquaresplot](/leastsquares/linalg/leastsquaresplot.png)
+![pic](/leastsquares/linalg/leastsquaresplot.png)
 
