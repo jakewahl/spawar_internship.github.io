@@ -126,6 +126,40 @@ def get_op(op):
 - Started to code for least squares, finished it.  Will upload/comment it/add pic to github tomorrow. 
 
 *DAY 14 (7/15)*:
+- Commented the plot_stuff.py code:
 
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+def least_squares(y, H):
+    # (H.T H)^-1 H.T x (notebook 7/8)
+    projection = np.dot(np.linalg.inv(np.dot(H.T, H)), H.T)
+    u = np.dot(projection, y)
+    s = np.dot(H, u)
+    return s, u
+# x from 0 to 2, sliced 40 times
+x = np.linspace(0, 2, 40, False)
+H = np.array([np.ones(x.shape), x]).T
+H2 = np.array([np.ones(x.shape), x, x ** 2]).T
+# f is the ground truth function
+f = x ** 2 - 2 * x + 2
+# standard deviation
+std = .35
+# e is random noise plotted around the ground truth
+e = std * np.random.randn(len(x))
+# y is the function with noise/error, it can be anything
+y = f + e
+# linear estimate
+s, est = least_squares(y, H)
+# better estimate, squared polynomial
+s1, _ = least_squares(y, H2)
+m = plt.scatter(x, y, c="r", s=31, label="measurements")
+gt = plt.plot(x, f, '-', c="k", linewidth=3, label="ground truth")
+hat = plt.plot(x, s, 'o-', label="estimate")
+hat2 = plt.plot(x, s1, 'o-', c="orange", label="better estimate")
+plt.legend()
+plt.show()
+```
 ![pic](/leastsquares/linalg/leastsquaresplot.png)
 
