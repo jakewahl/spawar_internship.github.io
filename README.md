@@ -117,7 +117,7 @@ def get_op(op):
 ***
 ###Week 4
 *DAY 12 (7/13)*:
-- Scott gave us an in-depth talk about his brief.  The discovery of anomolies (locating ships and humans) in Full-Motion Video.
+- Scott gave us an in-depth talk about his brief.  The discovery of anomalies (locating ships and humans) in Full-Motion Video.
 - I started to work on Project Euler again.  I completed problems 6 through 8 today and I am currently working on 9.  
 - Went to an intern meeting at 1:00 at the LOF.  Met a UCI Ph.D student studying Software Engineering who did her undergrad in Computer Science at Northwestern.  She works with Virtual Reality.
 
@@ -133,4 +133,5 @@ def get_op(op):
 
 - Went to a Computer Networks Seminar
 - Irwin Jacobs gave a speech on his life, entrepeneurship, and innovation in technology.  
+- Throughout the day I have been reading sections of this book: [Introduction to Linear ALgebra by Gilbert Strang, a professor at MIT](http://www.amazon.com/Introduction-Linear-Algebra-Fourth-Edition/dp/0980232716)
 
