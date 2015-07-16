@@ -137,5 +137,6 @@ def get_op(op):
 
 *DAY 15 (7/16)*:
 - Solved Project Eueler number 11 using brute force in python.
-- Played around with different values and functions in the least squares approximation code.  
+- Played around with different values and functions in the least squares approximation code and though this was cool:
+![pic](https://github.com/jakewahl/spawar_internship.github.io/blob/master/leastsquares/linalg/sin(x)leastsquares.png)
 
