@@ -136,4 +136,6 @@ def get_op(op):
 - Throughout the day I have been reading sections of this book: [Introduction to Linear Algebra by Gilbert Strang, a professor at MIT](http://www.amazon.com/Introduction-Linear-Algebra-Fourth-Edition/dp/0980232716)
 
 *DAY 15 (7/16)*:
+- Solved Project Eueler number 11 using brute force in python.
+- Played around with different values and functions in the least squares approximation code.  
 
