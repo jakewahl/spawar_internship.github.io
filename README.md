@@ -139,4 +139,11 @@ def get_op(op):
 - Solved Project Eueler number 11 using brute force in python.
 - Played around with different values and functions in the least squares approximation code and though this was cool:
 ![pic](https://github.com/jakewahl/spawar_internship.github.io/blob/master/leastsquares/linalg/sin(x)leastsquares.png)
+- Reviewed linear algebra with Scott.
+- Went to Scott's presentation in A33.
+
+*DAY 16 (7/17)*:
+- Will start planning content of both my poster presentation and quadchart.  I have downloaded templates for both of these projects.  
+- Reviewed more linear algebra (least squares and derivatives and inverses of matrices/vectors).
+- Reading more of Introduction to Linear Algebra by Gilbert Strang.    
 
