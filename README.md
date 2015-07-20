@@ -51,7 +51,7 @@ while b > 800:
 print max(pals)
 ```
 - Look at the rest of my problems!:
-[ProjectEuler1-6](http://127.0.0.1:8888/65ad8a2f-ffc8-4757-8249-9fa0b7e272d3)
+[ProjectEuler1-6](http://127.0.0.1:8888/65ad8a2f-ffc8-4757-8249-9fa0b7e272d3)magic function python
 
 *DAY 5 (6/30)*:
 - Took a tour of 4 labs at the Photonic labs.  
@@ -146,4 +146,11 @@ def get_op(op):
 - Will start planning content of both my poster presentation and quadchart.  I have downloaded templates for both of these projects.  
 - Reviewed more linear algebra (least squares and derivatives and inverses of matrices/vectors).
 - Reading more of Introduction to Linear Algebra by Gilbert Strang.    
+
+***
+###Week 5
+*DAY 17 (7/20)*:
+- Found a tutorial/instructions for a GUI game that utilized pygame.  
+- Installed pygame and wrote the program, it's a pretty awesome graphic game: [pygame](https://github.com/jakewahl/spawar_internship.github.io/blob/master/pygame.py/gamecode.py)
+- Finished creating a database and finished writing the code to pull from the MySQLdb and to write it to the leaflet site on the map.  I'm able to pick and choose what shows up on the map by writing in filters in the python code based on whatever I want (shipname, mmsi, unixtime, lat, lon, etc.)
 
