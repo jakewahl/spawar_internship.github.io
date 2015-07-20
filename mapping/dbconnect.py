@@ -14,6 +14,20 @@ pwd = "lucky13"
 dbname = "aisdb"
 table = "obs"
 
+class database:
+    def __init__(self, host, user, pwd, dbname):
+        self.host = host
+        self.user = user
+        self.pwd = pwd
+        self.dbname = dbname
+        self.table_lst = []
+
+    def new_table(self, tablename):
+        # Create new table
+
+        # then append it
+        self.table_lst.append(tablename)
+
 
 def create_connection(host, user, pwd, dbname):
     '''
@@ -43,18 +57,22 @@ def create_db(host, user, pwd, dbname):
     :return:
     '''
 
-    conn = create_connection(host, user, pwd)
+    conn = MySQLdb.connect(host, user, pwd)
     cursor = conn.cursor()
     try:
         # open db connection
         # MySQLdb.connect(host, user, pwd)
-        sql = "CREATE DATABASE IF NOT EXISTS" + dbname
+        sql = "CREATE DATABASE IF NOT EXISTS " + dbname
         cursor.execute(sql)
         print "Created db: ", dbname
+    except MySQLdb.Error as e:
+        print e
+    finally:
         cursor.close()
         conn.close()
 
-def create table(tablename, columns, host, user, pwd, dbname):
+
+def create_table(tablename, columns, host, user, pwd, dbname):
     '''
     create_table('obs', d, host, user, pwd, dbname)
     d = OrderedDict([('id', ('INT', 'NOT NULL AUTO_INCREMENT')),
@@ -70,11 +88,10 @@ def create table(tablename, columns, host, user, pwd, dbname):
     '''
     conn = create_connection(host, user, pwd, dbname)
     cursor = conn.cursor()
-
     cols = ""
     for key, val in columns.iteritems():
         cols += ", {} {} {}".format(key, val[0], val[1])
-    begin = "CREATE TABLE IF NOT EXISTS" + tablename + " ("
+    begin = "CREATE TABLE IF NOT EXISTS " + tablename + " ("
     sql = begin + cols[2:] + ") "
     try:
         # conn = MySQLdb.connect(host, user, pwd, dbname)
@@ -115,22 +132,22 @@ def insert_data(csvpath, csv_file, dbname, insert_str, host, user, pwd):
             for line in reader:
                 cursor.execute(insert_str, line)
             conn.commit()
-        print "Great success!"
+        print "Great success! High Five! Oh, nevermind, I'm a computer..."
         cursor.close()
         conn.close()
     except MySQLdb.Error as e:
-        print 'Error: {} | Error code: {}'.format(e[1], e[0])'
+        print 'Error: {} | Error code: {}'.format(e[1], e[0])
         cursor.close()
         conn.close()
 
 
 def complete_command(host, user, pwd, sql, dbname):
-    conn = create_connection(host, user, pwd, sql, dbname):
+    conn = create_connection(host, user, pwd, dbname)
     cursor = conn.cursor()
 
     try:
         print "Cursor created"
-        cursor = cursor.execute(sql)
+        cursor.execute(sql)
         list_of_tuples = cursor.fetchall()
         print "Command Executed"
     except MySQLdb.Error as e:
@@ -141,3 +158,20 @@ def complete_command(host, user, pwd, sql, dbname):
     list_of_tuples = list(list_of_tuples)
 
     return list_of_tuples
+
+if __name__ == "__main__":
+    # create_db(host, user, pwd, dbname)
+    # d = OrderedDict([('id', ('INT', 'NOT NULL AUTO_INCREMENT')),
+    #          ('unixtime', ('BIGINT', 'NOT NULL')),
+    #          ('lat', ('DOUBLE', 'NOT NULL')),
+    #          ('lon', ('DOUBLE', "")),
+    #          ('crs', ('DOUBLE', "")),
+    #          ('spd', ('DOUBLE', '')),
+    #          ('MMSI', ('VARCHAR(9)', "")),
+    #          ('SHIPNAME', ('VARCHAR(50)', "")),
+    #          ('', ('PRIMARY KEY(id)', ''))
+    #          ])
+    # create_table(table, d, host, user, pwd, dbname)
+    insert_str = "INSERT INTO {0} (unixtime, lat, lon, crs, spd, MMSI, SHIPNAME)\
+    VALUES (%s, %s, %s, %s, %s, %s, %s)".format(table)
+    insert_data("csv/", "aisdata.csv", dbname, insert_str, host, user, pwd)
