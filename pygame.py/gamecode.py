@@ -99,11 +99,11 @@ while running:
                 badguys.pop(index)
                 arrows.pop(index1)
             index1 += 1
-        #6.3.3 - next bad guy
+        # 6.3.3 - next bad guy
         index += 1
     for badguy in badguys:
         screen.blit(badguyimg, badguy)
-    #6.4 - draw clock
+    # 6.4 - draw clock
     font = pygame.font.Font(None, 24)
     survivedtext = font.render(str((time - pygame.time.get_ticks())/60000)+":"+str((time - pygame.time.get_ticks())/1000%60).zfill(2), True, (0, 0, 0))
     textRect = survivedtext.get_rect()
