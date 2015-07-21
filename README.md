@@ -155,6 +155,7 @@ def get_op(op):
 - Finished creating a database and finished writing the code to pull from the MySQLdb and to write it to the leaflet site on the map.  I'm able to pick and choose what shows up on the map by writing in filters in the python code based on whatever I want (shipname, mmsi, unixtime, lat, lon, etc.)
 
 *DAY 18 (7/21)*:
-- Field trip: Atmospheric Propagation in building 99]
-- 
+- Field trip: Atmospheric Propagation in building 99
+- More linear algebra: Span, vector space, subspace, basis, linear independency.
+- Follow-on opportunities at SSC Pacific meeting
 
