@@ -35,7 +35,7 @@
 
 ###Week 2
 *DAY 4 (6/29)*: 
-- Project Eueler 4 - 5.  ipython notebook has new folders.    
+- Project Euler 4 - 5.  ipython notebook has new folders.    
 Sample code for Project Euler 4:
 ```
 i, b = 999, 999
@@ -136,7 +136,7 @@ def get_op(op):
 - Throughout the day I have been reading sections of this book: [Introduction to Linear Algebra by Gilbert Strang, a professor at MIT](http://www.amazon.com/Introduction-Linear-Algebra-Fourth-Edition/dp/0980232716)
 
 *DAY 15 (7/16)*:
-- Solved Project Eueler number 11 using brute force in python.
+- Solved Project Euler number 11 using brute force in python.
 - Played around with different values and functions in the least squares approximation code and though this was cool:
 ![pic](https://github.com/jakewahl/spawar_internship.github.io/blob/master/leastsquares/linalg/sin(x)leastsquares.png)
 - Reviewed linear algebra with Scott.
@@ -153,4 +153,8 @@ def get_op(op):
 - Found a tutorial/instructions for a GUI game that utilized pygame.  
 - Installed pygame and wrote the program, it's a pretty awesome graphic game: [pygame](https://github.com/jakewahl/spawar_internship.github.io/blob/master/pygame.py/gamecode.py)
 - Finished creating a database and finished writing the code to pull from the MySQLdb and to write it to the leaflet site on the map.  I'm able to pick and choose what shows up on the map by writing in filters in the python code based on whatever I want (shipname, mmsi, unixtime, lat, lon, etc.)
+
+*DAY 18 (7/21)*:
+- Field trip: Atmospheric Propagation in building 99]
+- 
 
