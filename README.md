@@ -159,3 +159,7 @@ def get_op(op):
 - More linear algebra: Span, vector space, subspace, basis, linear independency.
 - Follow-on opportunities at SSC Pacific meeting
 
+*DAY 19 (7/22)*:
+- Tons more of linear algebra (expansion, pivot rank, range, column space, row space, null space)
+- Codecademy because I wanted to see how much python I've learned so far...a lot!
+
