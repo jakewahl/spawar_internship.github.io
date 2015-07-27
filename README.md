@@ -172,4 +172,6 @@ def get_op(op):
 *DAY 21 (7/27)*:
 - Made it my goal to finish the codecademy Python course today.  If I finish I would like to start the course on HTML and CSS.  
 - Aaron gave me a great website for HTML & CSS in addition to the codecademy course: [HTML & CSS](http://learn.shayhowe.com/html-css/building-your-first-web-page/)
+- Finished learning Python at 2:51pm...took 6 hours today. 
+- Started the HTML lesson
 
