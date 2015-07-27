@@ -163,3 +163,13 @@ def get_op(op):
 - Tons more of linear algebra (expansion, pivot rank, range, column space, row space, null space)
 - Codecademy because I wanted to see how much python I've learned so far...a lot!
 
+*DAY 20 (7/23)*:
+- More codecademy.
+- Made a quick battleship game
+
+***
+###Week 6
+*DAY 21 (7/27)*:
+- Made it my goal to finish the codecademy Python course today.  If I finish I would like to start the course on HTML and CSS.  
+- Aaron gave me a great website for HTML & CSS in addition to the codecademy course: [HTML & CSS](http://learn.shayhowe.com/html-css/building-your-first-web-page/)
+
