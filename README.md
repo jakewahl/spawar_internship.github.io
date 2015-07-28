@@ -56,7 +56,7 @@ print max(pals)
 *DAY 5 (6/30)*:
 - Took a tour of 4 labs at the Photonic labs.  
 - MATLAB class.  
-- Started a simple math game.  Create/save accounts with usernames, passwords, and scores.  Gives two random numbers to be multiplied and the player must answer them within a time limit.  Started with the mapping project.
+- Started a simple math game.  Create/save accountsyahoo with usernames, passwords, and scores.  Gives two random numbers to be multiplied and the player must answer them within a time limit.  Started with the mapping project.
 
 *DAY 6 (7/1)*:
 - Finished multiplication game.  
@@ -137,7 +137,7 @@ def get_op(op):
 
 *DAY 15 (7/16)*:
 - Solved Project Euler number 11 using brute force in python.
-- Played around with different values and functions in the least squares approximation code and though this was cool:
+- Played around with different values and functions in the least squares approximation code and thought this was cool:
 ![pic](https://github.com/jakewahl/spawar_internship.github.io/blob/master/leastsquares/linalg/sin(x)leastsquares.png)
 - Reviewed linear algebra with Scott.
 - Went to Scott's presentation in A33.
@@ -174,4 +174,7 @@ def get_op(op):
 - Aaron gave me a great website for HTML & CSS in addition to the codecademy course: [HTML & CSS](http://learn.shayhowe.com/html-css/building-your-first-web-page/)
 - Finished learning Python at 2:51pm...took 6 hours today. 
 - Started the HTML lesson
+
+*DAY 22 (7/28)*:
+- Worked on HTML and CSS the entire day, finished the codecademy course.
 
