@@ -178,3 +178,7 @@ def get_op(op):
 *DAY 22 (7/28)*:
 - Worked on HTML and CSS the entire day, finished the codecademy course.
 
+*DAY 23 (7/29)*:
+- Made a "travelFox" website (made up name) using both HTML and CSS with Bootstrap on codecademy. 
+- Finished the first "Web Developer Skill".  
+
