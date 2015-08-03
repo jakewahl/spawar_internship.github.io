@@ -182,3 +182,20 @@ def get_op(op):
 - Made a "travelFox" website (made up name) using both HTML and CSS with Bootstrap on codecademy. 
 - Finished the first "Web Developer Skill".  
 
+*DAY 24 (7/30)*:
+- JavaScript tutorial 
+
+*DAY 25 (7/31)*:
+- more JavaScript
+
+***
+###Week 7
+*DAY 26 (8/3)*:
+- 
+
+
+
+
+
+
+
