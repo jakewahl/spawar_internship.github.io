@@ -191,7 +191,9 @@ def get_op(op):
 ***
 ###Week 7
 *DAY 26 (8/3)*:
-- 
+- Linear Algebra and Fourier transforms
+- more JavaScript
+- intern meeting
 
 
 
