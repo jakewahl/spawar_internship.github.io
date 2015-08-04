@@ -195,6 +195,11 @@ def get_op(op):
 - more JavaScript
 - intern meeting
 
+*DAY 27 (8/4)*:
+- Robotics field trip at Seaside.  Super cool robots that follow and assist human warfighters on the battlefield.  Got to drive/control a couple smaller surveillance robots wiht cameras.
+- More JavaScript codecademy
+- Internal/Cyber security poster/demo session
+
 
 
 
