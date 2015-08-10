@@ -210,7 +210,7 @@ def get_op(op):
 ###Week 8
 *DAY 30 (8/10)*:
 - Finished the codecademy JavaScript course (finally!)
-- start [Discrete Mathematics](http://www.amazon.com/Discrete-Mathematics-Edition-Norman-Biggs/dp/0198507178) by Norman L. Biggs?
+- started [Head First C](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&ved=0CDgQFjAEahUKEwjthpL9mJ_HAhVHjQ0KHfjTB6M&url=http%3A%2F%2Fwdl29.streamhoster.com%2Fyc0204200%2Fhead%2520first%2520c.pdf&ei=KfTIVa3ON8eaNvinn5gK&usg=AFQjCNEPRZlyl0INiUVMnFBqjqTb3w91HA&sig2=3nVj5lRiHrPSLASXmWc18w&bvm=bv.99804247,d.eXY&cad=rja) by Andrew Stellman
 
 *DAY 31 (8/11)*:
 - 
