@@ -210,6 +210,7 @@ def get_op(op):
 ###Week 8
 *DAY 30 (8/10)*:
 - Finished the codecademy JavaScript course (finally!)
+- start [Discrete Mathematics](http://www.amazon.com/Discrete-Mathematics-Edition-Norman-Biggs/dp/0198507178) by Norman L. Biggs?
 
 *DAY 31 (8/11)*:
 - 
