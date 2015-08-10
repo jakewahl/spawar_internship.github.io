@@ -201,15 +201,15 @@ def get_op(op):
 - Internal/Cyber security poster/demo session
 
 *DAY 28 (8/5)*:
-- 
+- still trying to finish the javascript course
 
 *DAY 29 (8/6)*: 
-- 
+- still trying to finish the javascript course
 
 ***
 ###Week 8
 *DAY 30 (8/10)*:
-- 
+- Finished the codecademy JavaScript course (finally!)
 
 *DAY 31 (8/11)*:
 - 
