@@ -215,7 +215,6 @@ def get_op(op):
 *DAY 31 (8/11)*:
 - Continue reading the C tutorial
 - write some simple codes in C
-- 
 
 *DAY 32 (8/12)*:
 - 
