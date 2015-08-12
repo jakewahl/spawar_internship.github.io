@@ -217,7 +217,9 @@ def get_op(op):
 - write some simple codes in C
 
 *DAY 32 (8/12)*:
-- 
+- Brought in "The C Programming Language" by Kernighan and Ritchie
+- Ritchie developed and created the C language
+- continuing to do simple C codes
 
 *DAY 33 (8/13)*:
 - 
