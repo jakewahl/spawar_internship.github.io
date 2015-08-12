@@ -1,14 +1,26 @@
-#include <stdio.h>
-
+#include<stdio.h>
+ 
 int main()
 {
-	int x = 0;
-	int y = 0;
-	while (x < 10) {
-		x = x + 1;
-		y = y + x;
-		printf("%i%i\n", x, y);
-		x = x + 1;
-		printf("x is stored at %p\n", &x);
-	}
+   int n, first = 0, second = 1, next, c;
+ 
+   printf("How many terms do you want?:\n");
+   scanf("%d",&n);
+ 
+   printf("The first %d terms of Fibonacci series are :\n", n);
+ 
+   for ( c = 0 ; c < n ; c++ )
+   {
+      if ( c <= 1 )
+         next = c;
+      else
+      {
+         next = first + second;
+         first = second;
+         second = next;
+      }
+      printf("%d\n",next);
+   }
+ 
+   return 0;
 }
