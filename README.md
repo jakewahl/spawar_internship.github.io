@@ -51,7 +51,7 @@ while b > 800:
 print max(pals)
 ```
 - Look at the rest of my problems!:
-[ProjectEuler1-6](http://127.0.0.1:8888/65ad8a2f-ffc8-4757-8249-9fa0b7e272d3)magic function python
+[Project Euler](https://github.com/jakewahl/spawar_internship.github.io/blob/master/euler.ipynb)
 
 *DAY 5 (6/30)*:
 - Took a tour of 4 labs at the Photonic labs.  
