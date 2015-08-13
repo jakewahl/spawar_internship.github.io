@@ -222,7 +222,8 @@ def get_op(op):
 - continuing to do simple C codes
 
 *DAY 33 (8/13)*:
-- 
+- Read more of K&R C book
+- Prepared my presentation script outline
 
 *DAY 34 (8/14)*:
 - 
