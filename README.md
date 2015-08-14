@@ -226,7 +226,7 @@ def get_op(op):
 - Prepared my presentation script outline
 
 *DAY 34 (8/14)*:
-- 
+- Presentation
 
 
 
