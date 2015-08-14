@@ -1,12 +1,29 @@
-#include <stdio.h>
 
-/* print Fahrenheit-Celsius table for f = 0, 20, ..., 300 */
+/* Fibonacci Series c language */
 
+#include<stdio.h>
+ 
 int main()
 {
-	int fahr;
-	for (fahr = 0; fahr <= 300; fahr += 20) {
-		printf("%4d %6.2f\n", fahr, (5.0/9.0) * (fahr-32.0));
-	}
+   int n, first = 0, second = 1, next, c;
+ 
+   printf("Enter the number of terms\n");
+   scanf("%d",&n);
+ 
+   printf("First %d terms of Fibonacci series are :-\n",n);
+ 
+   for ( c = 0 ; c < n ; c++ )
+   {
+      if ( c <= 1 )
+         next = c;
+      else
+      {
+         next = first + second;
+         first = second;
+         second = next;
+      }
+      printf("%d\n",next);
+   }
+ 
+   return 0;
 }
-
